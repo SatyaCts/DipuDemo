@@ -32,14 +32,14 @@
 	  <repository>  
 	    <id>Nexus</id>  
   	    <name>Nexus</name>  
-        <url>http://192.168.0.7:8081/nexus/content/repositories/SatyaRelease</url>
+        <url>http://192.168.0.105:8081/repository/SatyaDemoProjects/</url>
       </repository>  
 	  
 	  <!-- Publish the versioned releases here -->  
 	  <snapshotRepository>  
 	    <id>Nexus</id>  
 	    <name>Nexus</name>  
-	    <url>http://192.168.0.7:8081/nexus/content/repositories/SatyaSnapshot</url>
+	    <url>http://192.168.0.105:8081/repository/SatyaDemoProjects/</url>
 	   </snapshotRepository>  
    </distributionManagement>  
   
@@ -48,7 +48,7 @@
 	 <repository>  
 	   <id>Nexus</id>  
 	   <name>satya</name>  
-	   <url>http://192.168.0.7:8081/nexus/content/groups/public/</url>  
+	   <url>http://192.168.0.5:8081/nexus/content/groups/public/</url>  
 	     <releases>  
 	       <enabled>true</enabled>  
 	     </releases>  
@@ -64,7 +64,7 @@
 	   <pluginRepository>  
 	      <id>Nexus</id>  
 	      <name>satya</name>  
-	      <url>http://192.168.0.7:8081/nexus/content/groups/public/</url>  
+	      <url>http://192.168.0.5:8081/nexus/content/groups/public/</url>  
 	      <releases>  
 	        <enabled>true</enabled>  
 	      </releases>  
