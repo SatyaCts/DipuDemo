@@ -28,7 +28,7 @@
       </execution>
    </executions>
    <configuration>
-      <serverId>Nexus</serverId>
+      <serverId>LocalNexus</serverId>
       <nexusUrl>http://192.168.0.105:8081/nexus/</nexusUrl>
       <skipStaging>true</skipStaging>
    </configuration>
@@ -49,14 +49,14 @@
   <distributionManagement>  
 	  <!-- Publish the versioned releases here -->  
 	  <repository>  
-	    <id>Nexus</id>  
+	    <id>LocalNexus</id>  
   	    <name>Nexus</name>  
         <url>http://192.168.0.105:8081/repository/Satya_Snapshot/</url>
       </repository>  
 	  
 	  <!-- Publish the versioned releases here -->  
 	  <snapshotRepository>  
-	    <id>Nexus</id>  
+	    <id>LocalNexus</id>  
 	    <name>Nexus</name>  
 	    <url>http://192.168.0.105:8081/repository/Satya_Snapshot/</url>
 	   </snapshotRepository>  
@@ -65,7 +65,7 @@
 	<!-- download artifacts from this repo -->  
    <repositories>  
 	 <repository>  
-	   <id>Nexus</id>  
+	   <id>LocalNexus</id>  
 	   <name>Nexus</name>  
 	   <url>http://192.168.0.5:8081/nexus/content/groups/public/</url>  
 	     <releases>  
@@ -81,7 +81,7 @@
 	<!-- download plugins from this repo -->  
     <pluginRepositories>  
 	   <pluginRepository>  
-	      <id>Nexus</id>  
+	      <id>LocalNexus</id>  
 	      <name>Nexus</name>  
 	      <url>http://192.168.0.5:8081/nexus/content/groups/public/</url>  
 	      <releases>  
