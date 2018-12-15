@@ -14,6 +14,25 @@
           <target>1.8</target>
         </configuration>
       </plugin>
+   <plugin>
+   <groupId>org.sonatype.plugins</groupId>
+   <artifactId>nexus-staging-maven-plugin</artifactId>
+   <version>1.5.1</version>
+   <executions>
+      <execution>
+         <id>default-deploy</id>
+         <phase>deploy</phase>
+         <goals>
+            <goal>deploy</goal>
+         </goals>
+      </execution>
+   </executions>
+   <configuration>
+      <serverId>Nexus</serverId>
+      <nexusUrl>http://192.168.0.105:8081/nexus/</nexusUrl>
+      <skipStaging>true</skipStaging>
+   </configuration>
+</plugin>
     </plugins>
     
   </build>
@@ -44,10 +63,10 @@
    </distributionManagement>  
   
 	<!-- download artifacts from this repo -->  
-	<repositories>  
+   <!--repositories>  
 	 <repository>  
 	   <id>Nexus</id>  
-	   <name>satya</name>  
+	   <name>Nexus</name>  
 	   <url>http://192.168.0.5:8081/nexus/content/groups/public/</url>  
 	     <releases>  
 	       <enabled>true</enabled>  
@@ -57,13 +76,13 @@
 	      <enabled>true</enabled>  
 	     </snapshots>  
 	   </repository>  
-    </repositories>  
+    </repositories-->  
 	  
 	<!-- download plugins from this repo -->  
-    <pluginRepositories>  
+    <!--pluginRepositories>  
 	   <pluginRepository>  
 	      <id>Nexus</id>  
-	      <name>satya</name>  
+	      <name>Nexus</name>  
 	      <url>http://192.168.0.5:8081/nexus/content/groups/public/</url>  
 	      <releases>  
 	        <enabled>true</enabled>  
@@ -72,6 +91,6 @@
 	        <enabled>true</enabled>  
 	      </snapshots>  
        </pluginRepository>  
-    </pluginRepositories>  
+    </pluginRepositories-->  
   
 </project>
