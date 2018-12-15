@@ -63,7 +63,7 @@
    </distributionManagement>  
   
 	<!-- download artifacts from this repo -->  
-   <!--repositories>  
+   <repositories>  
 	 <repository>  
 	   <id>Nexus</id>  
 	   <name>Nexus</name>  
@@ -76,10 +76,10 @@
 	      <enabled>true</enabled>  
 	     </snapshots>  
 	   </repository>  
-    </repositories-->  
+    </repositories>  
 	  
 	<!-- download plugins from this repo -->  
-    <!--pluginRepositories>  
+    <pluginRepositories>  
 	   <pluginRepository>  
 	      <id>Nexus</id>  
 	      <name>Nexus</name>  
@@ -91,6 +91,6 @@
 	        <enabled>true</enabled>  
 	      </snapshots>  
        </pluginRepository>  
-    </pluginRepositories-->  
+    </pluginRepositories>  
   
 </project>
