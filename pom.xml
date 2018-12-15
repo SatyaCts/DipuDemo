@@ -51,14 +51,14 @@
 	  <repository>  
 	    <id>Nexus</id>  
   	    <name>Nexus</name>  
-        <url>http://192.168.0.105:8081/repository/SatyaDemoProjects/</url>
+        <url>http://192.168.0.105:8081/repository/Satya_Snapshot/</url>
       </repository>  
 	  
 	  <!-- Publish the versioned releases here -->  
 	  <snapshotRepository>  
 	    <id>Nexus</id>  
 	    <name>Nexus</name>  
-	    <url>http://192.168.0.105:8081/repository/SatyaDemoProjects/</url>
+	    <url>http://192.168.0.105:8081/repository/Satya_Snapshot/</url>
 	   </snapshotRepository>  
    </distributionManagement>  
   
